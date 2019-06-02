@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<table border="1">
+    <tr>
+        <th>Pid</th>
+        <th>Pname</th>
+        <th>Pcost</th>
+        <th>Pmfdt</th>
+        <th>pexpdt</th>
+    </tr>
+    {% for rec in records %}
+        <td>{{ rec.pid }}</td>
+        <td>{{ rec.pname }}</td>
+        <td>{{ rec.pcost }}</td>
+        <td>{{ rec.pmfdt }}</td>
+        <td>{{ rec.pexpdt }}</td>
+    {% endfor %}
+</table>
+<a href="/restapp5">Click here to insert another product</a>
+</body>
+</html>
